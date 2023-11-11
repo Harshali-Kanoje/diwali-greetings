@@ -1,0 +1,15 @@
+.greeting{
+    background:linear-gradient(190deg, pink, blueviolet);
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+    position: relative;
+    font-size: 18px;
+}
+
+.sender{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 20px;
+}
