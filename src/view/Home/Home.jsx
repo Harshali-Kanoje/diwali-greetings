@@ -42,7 +42,7 @@ const Home = () => {
         navigator.clipboard.writeText(url)
         alert("Copied to Clipboard")
       }}>
-        {import.meta.env.VITE_BASE_URL}?to={to}&from={from}&t={themeNumber}
+        {import.meta.env.VITE_BASE_URL}?to={to}&from={from}&g={greeting}&t={themeNumber}
       </p>
       <div className='input-container'>
         <input type='text'
@@ -61,16 +61,16 @@ const Home = () => {
           }}
           className='input' />
 
-        <select value={themeNumber} onChange={(e) => {
+        <select value={greeting} onChange={(e) => {
           setGreeting(e.target.value)
         }}
           className='input'>
           
-          <option value="1">Theme 1</option>
-          <option value="2">Theme 2</option>
-          <option value="3">Theme 3</option>
-          <option value="4">Theme 4</option>
-          <option value="0">Theme 5</option>
+          <option value="1">Greeting 1</option>
+          <option value="2">Greeting 2</option>
+          <option value="3">Greeting 3</option>
+          <option value="4">Greeting 4</option>
+          <option value="0">Greeting 5</option>
           
         </select>
 
